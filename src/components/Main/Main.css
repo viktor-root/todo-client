@@ -1,0 +1,62 @@
+.container_comp_main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg') !important;
+    position: fixed;
+  }
+  .App {
+    margin: auto;
+    margin-top: 70px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #0000001a;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .top {
+    background: var(--text);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 28px;
+    margin: 0;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .task {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+  
+  .task:hover {
+    background-color: #04395e3d;
+  }
+  
+  .task p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--text);
+  }
+  
+  .task-done {
+    background-color: #00000027;
+  }
+  .task-done p {
+    color: #00000050;
+  }
+  
+  .action-btn {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .action-btn:hover {
+    background-color: #04395e3d;
+    border-radius: 5px;
+  }
+  

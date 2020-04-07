@@ -1,0 +1,126 @@
+.container_comp_about{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg') !important;
+    position: fixed;
+    padding-top:50px;
+
+}
+.About {
+    height: 450px;
+    width: 900px;
+    position: relative;
+    background-image: linear-gradient(to bottom right,#a9c8d9,#083c85 );
+    margin: 0 auto;
+    box-shadow: 0px 2px 12px 3px rgba(105,126,199,1);
+    
+}
+
+.header_comp_about {
+    align-items: center;
+    text-align: center;
+    transform: translate(0, +100px);
+    color: white;
+}
+
+ .header_comp_about h2 {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.header_comp_about span {
+    font-size: 20px;
+}
+
+.list_comp_about {
+    align-items: center;
+    text-align: center;
+    transform: translate(0, +120px);
+}
+
+.list_comp_about ul {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.list_comp_about ul li a{
+    color: white;
+    font-size: 26px;
+}
+.list_comp_about ul li a:hover{
+    color: black;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.list_component_about ul,
+li {
+    padding-top: 40px;
+    padding-right: 15px;
+}
+.list_comp_about i {
+    font-size: 35px;
+} 
+
+.social-icons-7 {
+	list-style: none;
+    margin: 10px;
+	padding: 0;
+	display: flex;
+	justify-content: center;	  
+}
+.social-icons-7 a {
+	text-decoration: none;
+	width: 65px;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 0 6px;
+	font-size: 28px;
+	overflow: hidden;
+	position: relative;
+	color: #003785;
+	border: 2px solid black;
+	transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+.social-icons-7 a:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	background-color:#003785;
+}
+.social-icons-7 a i,
+.social-icons-7 a img {
+	transition: transform 0.2s linear 0s;
+	transform: rotate(-45deg);
+    position: relative;
+    z-index: 1;		  
+}
+.social-icons-7 a img {
+	width: 26px;
+	height: 26px;
+}
+.social-icons-7 a:hover {
+	border-radius: 0px;
+	width: 67px;
+	height: 67px;
+	color: #FFF;
+	margin: 5px 11px
+}
+.social-icons-7 a:hover:after {
+	top: 0;
+    transition: all 0.2s linear 0s;
+    background: #fff;
+}

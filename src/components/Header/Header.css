@@ -1,0 +1,95 @@
+.wrapper_comp_header {
+    z-index: 10;
+    height: 75px;
+    width: 100%;
+    background-color: #04395e;
+    border-bottom: black solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.comp_header_logo{
+    padding: 0px;
+    font-size: 30px;
+    width: 33%;
+    
+}
+.comp_header_logo img{
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 90px;
+    height: 70px;
+}
+
+.comp_header_list{
+    width: 33%;
+}
+.comp_header_list ul {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+.comp_header_list ul li {
+    padding: 20px 30px 20px 15px;
+}
+
+.comp_header_list ul li a {
+    color: white;
+}
+
+.comp_header_list ul li:hover a {
+    font-size: 34px;
+    text-decoration-line: underline;
+    color:#6397e0;
+}
+a,
+li,
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+.comp_header_user_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+.comp_header_user_logo{
+    margin-right: 10px;
+}
+.comp_header_user_logo img{
+    height: 52px;
+    width: 52px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.comp_header_user_name{
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.comp_header_user_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+    border-radius: 24px;
+}
+.comp_header_user_exit a i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.comp_header_user_exit a i:active{
+    color: silver;
+    font-size: 32px;
+}
+
