@@ -49,7 +49,7 @@ export const Auth = (props) => {
   };
   
   const handlePasswordValidate = (value) => {
-    return /^(?=.*[a-z])(?=.*[A-Z]).{8,16}$/.test(value);
+    return /^(?=.*[a-z])(?=.*[A-Z]).{8,24}$/.test(value);
   }
 
   if(props.pageStatus === PageStatus.ERROR && showNotification) {
@@ -63,7 +63,7 @@ export const Auth = (props) => {
 
     
   if (props.pageStatus === PageStatus.LOADING) {
-    return <Loader />
+    return <Loader/>
   } else {
     return (
       <div className="container container_comp_auth">
@@ -91,9 +91,9 @@ export const Auth = (props) => {
                 className="login-form-button"
                 onClick={loginCallback}
               >
-                Log in
+                Войти
               </Button>
-              Or <a href="/reg">register now!</a>
+              Или <a href="/reg">Зарегистрируйтесь сейчас!</a>
             </Form.Item>
           </Form>
         </div>

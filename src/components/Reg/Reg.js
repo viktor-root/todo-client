@@ -1,9 +1,11 @@
 
 import React, { useCallback, useState, useEffect } from "react";
+import { Loader } from "../Loader/Loader";
 import "./Reg.css";
 import { Form, Tooltip, Input, Checkbox, Button, notification } from "antd";
 import axios from 'axios';
-import { Loader } from "../Loader/Loader";
+
+
  
 export const Reg = (props) => {
     console.log(props);
@@ -71,11 +73,11 @@ export const Reg = (props) => {
     };
   
     const handleEmailValidate = (value) => {
-      return /^[a-z._\-]+@[a-z]+\.[a-z]{2,20}$/.test(value);
+      return /^[a-z._\-0-9]+@[a-z]+\.[a-z]{2,20}$/.test(value);
     };
     
     const handlePasswordValidate = (value) => {
-      return /^(?=.*[a-z])(?=.*[A-Z]).{8,16}$/.test(value);
+      return /^(?=.*[a-z])(?=.*[A-Z]).{8,24}$/.test(value);
     }
     
     const showEror = () => {
@@ -103,20 +105,24 @@ export const Reg = (props) => {
                 />
             </Form.Item>
             <Form.Item>
-                <Input.Password
-                  type="password"
-                  onChange={handlePasswordChangeCallback}
-                  style={{borderColor: `${passwordValidate == true ? 'green': 'red'}`}}
-                  placeholder="Password"
-                />
+                <Tooltip placement="rightTop" title="Используйте латинский алфавит длинной от 8 до 24 символов">
+                  <Input.Password
+                    type="password"
+                    onChange={handlePasswordChangeCallback}
+                    style={{borderColor: `${passwordValidate == true ? 'green': 'red'}`}}
+                    placeholder="Password"
+                    />
+                  </Tooltip>
             </Form.Item>
             <Form.Item>
-                <Input.Password
-                  type="password"
-                  onChange={confirmPasswordChangeCallback}
-                  style={{borderColor: `${confirmPasswordValidate == true ? 'green': 'red'}`}}
-                  placeholder="Password"
-                />
+                <Tooltip placement="rightTop" title="Используйте латинский алфавит длинной от 8 до 24 символов">
+                  <Input.Password
+                    type="password"
+                    onChange={confirmPasswordChangeCallback}
+                    style={{borderColor: `${confirmPasswordValidate == true ? 'green': 'red'}`}}
+                    placeholder="Confirm Password"
+                  />
+                </Tooltip>
             </Form.Item>
             <Form.Item>
               <Button
@@ -125,8 +131,9 @@ export const Reg = (props) => {
                 className="login-form-button"
                 onClick={regCallback}
               >
-                Create account!
+                Создатть аккаунт!
               </Button>
+                Есть аккаунт?<a href="/auth">Авторизироваться</a>
             </Form.Item>
           </Form>
         </div>
