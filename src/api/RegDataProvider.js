@@ -2,12 +2,12 @@ import axios from "axios";
 import { BaseRestDataProvider } from "./BaseRestDataProvider";
 
 export class RegDataProvider extends BaseRestDataProvider {
-  reg(login,password) {
+  reg(login,password, name) {
 
     return axios
     .post(
       `${this.host}auth/register`,
-      { login, password },
+      { login, password, name },
       {
         headers: {
           "Content-type": "application/json; charset=UTF-8",

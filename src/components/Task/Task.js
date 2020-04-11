@@ -56,10 +56,14 @@ export class Task extends React.Component {
                 <div className = {className}>
                     { this.state.edit ? <input className="edit-input" value={this.state.editInputValue} onChange={this.editInputChangeCallback}></input> : <p>{task.title}</p>}
                     <span>{task.date}</span>
+                    <div>
+                        {task.createdAt.split('T')[0]}
+                    </div>
                     <div className="task_comp_but_wrap">
                         <div className="edit-btn" onClick={this.editHandler}>
                             { this.state.edit ? <p>✔</p> : <p>✏️</p>}
                         </div>
+                        
                         <div className="action-btn">
                             {!task.done ? (
                                 <p onClick={this.doneTask}>✔️</p>

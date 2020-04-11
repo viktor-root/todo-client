@@ -45,7 +45,7 @@ export class Header extends React.Component {
                                 <img src={img_avatar} alt="icon"/>
                             </div>
                             <div className="comp_header_user_name">
-                                <span>{this.props.user.login}</span>
+                                <span>{this.props.user.name}</span>
                             </div>
                         </div>
                     </div>

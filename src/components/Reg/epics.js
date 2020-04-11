@@ -7,8 +7,8 @@ import { REG, regSuccess, regError } from "./actions";
 const regEpic = (action$, store$, deps) => {
   return action$.pipe(
     ofType(REG),
-    switchMap(({ login, password }) => {
-      return from(deps.regDataProvider.reg(login, password)).pipe(
+    switchMap(({ login, password, name }) => {
+      return from(deps.regDataProvider.reg(login, password, name)).pipe(
         switchMap(() => {
           return of(regSuccess(), changeLocation('/', false));
         }),

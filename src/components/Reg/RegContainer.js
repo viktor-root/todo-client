@@ -8,8 +8,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  reg: (login, password) => {
-    dispatch(reg(login, password));
+  reg: (login, password,name) => {
+    dispatch(reg(login, password, name));
   }
 });
 

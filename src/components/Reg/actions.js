@@ -1,10 +1,11 @@
 export const REG = "REG";
 
-export const reg = (login, password) => {
+export const reg = (login, password,name) => {
   return {
     type: REG,
     login,
-    password, 
+    password,
+    name
   }
 }
 

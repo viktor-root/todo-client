@@ -11,7 +11,7 @@ export const Reg = (props) => {
     console.log(props);
     const [email, setEmail] = useState("");
     const [emailValidate, setEmailValidate] = useState(false);
-  
+    const [name, setName] = useState('');
     const [password, setPassword] = useState("");
     const [passwordValidate, setPasswordValidate] = useState(false);
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -19,7 +19,14 @@ export const Reg = (props) => {
 
 
     const [showError, setShowError] = useState(true);
-
+    const handleNameChangeCallback = useCallback(
+      (e) => {
+        if (e.target) {
+          setName(e.target.value);
+        }
+      },
+      [name]
+    );
     const handleEmailChangeCallback = useCallback(
       (e) => {
         if (e.target) {
@@ -68,7 +75,7 @@ export const Reg = (props) => {
       }
       if(passwordValidate && emailValidate && confirmPasswordValidate) {
         setShowError(true);
-        props.reg(email, password);
+        props.reg(email, password, name);
       }
     };
   
@@ -97,6 +104,12 @@ export const Reg = (props) => {
         <div className="container container_comp_reg">
           <Form className="login-form">
             <h1>Регистрация</h1>
+            <Form.Item>
+                <Input
+                  placeholder="Имя Фамилия"
+                  onChange={handleNameChangeCallback}
+                />
+            </Form.Item>
             <Form.Item>
                 <Input
                   placeholder="E-Mail"
