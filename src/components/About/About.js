@@ -7,8 +7,8 @@ export const About = () => {
     <div className="container_comp_about">
         <div className="About">
             <div className="header_comp_about">
-                <h2>ViNotes</h2>
-                <span>App version: 1.0.0.<br/>Viktor Gogolev Corporation &copy;</span>
+                <h2>Персональный органайзер</h2>
+                <span>Версия приложения: 1.0.0a<br/>Design by Viktor Gogolev in Crimea&copy;</span>
             </div>
             <div className="list_comp_about">
             <ul class="social-icons-7">

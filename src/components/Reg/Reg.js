@@ -123,7 +123,7 @@ export const Reg = (props) => {
                     type="password"
                     onChange={handlePasswordChangeCallback}
                     style={{borderColor: `${passwordValidate == true ? 'green': 'red'}`}}
-                    placeholder="Password"
+                    placeholder="Пароль"
                     />
                   </Tooltip>
             </Form.Item>
@@ -133,7 +133,7 @@ export const Reg = (props) => {
                     type="password"
                     onChange={confirmPasswordChangeCallback}
                     style={{borderColor: `${confirmPasswordValidate == true ? 'green': 'red'}`}}
-                    placeholder="Confirm Password"
+                    placeholder="Подтвердите пароль"
                   />
                 </Tooltip>
             </Form.Item>

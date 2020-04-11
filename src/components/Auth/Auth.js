@@ -71,7 +71,7 @@ export const Auth = (props) => {
             <h1>Авторизация</h1>
             <Form.Item>
                 <Input
-                  placeholder="E-Mail"
+                  placeholder="E-mail"
                   onChange={handleEmailChangeCallback}
                   style={{borderColor: `${emailValidate == true ? 'green': 'red'}`}}
                 />
@@ -81,7 +81,7 @@ export const Auth = (props) => {
                   type="password"
                   onChange={handlePasswordChangeCallback}
                   style={{borderColor: `${passwordValidate == true ? 'green': 'red'}`}}
-                  placeholder="Password"
+                  placeholder="Пароль"
                 />
             </Form.Item>
             <Form.Item>
