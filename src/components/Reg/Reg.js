@@ -78,7 +78,6 @@ export const Reg = (props) => {
         props.reg(email, password, name);
       }
     };
-  
     const handleEmailValidate = (value) => {
       return /^[a-z._\-0-9]+@[a-z]+\.[a-z]{2,20}$/.test(value);
     };
