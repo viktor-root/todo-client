@@ -13,9 +13,6 @@ export class Main extends React.Component {
         super();
         this.state = {
             tasks : [
-            {id:0, title:'Create to-do app',done:false},
-            {id:1, title:'Find real true girl',done:true},
-            {id:2, title:'Buy beautiful and cozy house',done:false}
             ]
         };
     }
